@@ -10,9 +10,11 @@
   <input ng-model='search' type='text'>
 <br>
 <h3>Country</h3>
-      <button ng-repeat="country in countries | filter:search">
-        {{country}}
-      </button>
+      <ul>
+      <li ng-repeat="country in countries | filter:search">
+        <a href="#/{{country}">{{country}}</a>
+      </li>
+      <ul>
 <br>
 <p>Name:{{name}}</p>
 <p>ISO:{{iso}}</p>
