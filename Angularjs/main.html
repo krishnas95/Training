@@ -1,0 +1,8 @@
+<input ng-model='search' type='text'>
+<br>
+<h3>Country</h3>
+      <ul>
+      <li ng-repeat="country in countries | filter:search">
+        <a href="#/{{country}}">{{country}}</a>
+      </li>
+     <ul>
